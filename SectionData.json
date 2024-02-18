@@ -1,0 +1,572 @@
+{
+	"CategoryData": [
+		{
+			"categoryTitle": "Phone & Telecommunications",
+			"categoryImage": "src/assets/categoryImages/phone.jpg",
+			"link": "smartphones",
+			"subCategory": [
+				{
+					"subTitle": "Mobile Phones",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "IPones"
+						},
+						{
+							"category": "smart Phones Android"
+						},
+						{
+							"category": "Refurbished Phones"
+						}
+					]
+				},
+				{
+					"subTitle": "Phone Parts",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Phone Repairing Tools"
+						},
+						{
+							"category": "Phone Screens"
+						},
+						{
+							"category": "Phone Batteries"
+						},
+						{
+							"category": "Others"
+						}
+					]
+				},
+				{
+					"subTitle": "Phone Accessories",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Power Banks"
+						},
+						{
+							"category": "Holders & Stands"
+						},
+						{
+							"category": "Phone Chargers"
+						},
+						{
+							"category": "Screen Protectors"
+						},
+						{
+							"category": "Phone Cases"
+						},
+						{
+							"category": "Earphones & Headsets"
+						},
+						{
+							"category": "Smart Watches"
+						},
+						{
+							"category": "Micro SD Cards"
+						}
+					]
+				}
+			]
+		},
+		{
+			"categoryTitle": "Home Improvement & Lightening",
+			"categoryImage": "src/assets/categoryImages/lighting.jpg",
+			"link": "lighting",
+			"subCategory": [
+				{
+					"subTitle": "Electrical Equipment & Accessories",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Solar panels"
+						},
+						{
+							"category": "Solar Inverters"
+						},
+						{
+							"category": "Smart Switches"
+						},
+						{
+							"category": "Wiring Accessories"
+						},
+						{
+							"category": "Bulbs"
+						}
+					]
+				},
+				{
+					"subTitle": "Family Intelligence System",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Smart Dimmers"
+						},
+						{
+							"category": "Smart Water Heaters"
+						},
+						{
+							"category": "Smart Smoke Detectors"
+						}
+					]
+				},
+				{
+					"subTitle": "Generators & Portable Power",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Generators"
+						},
+						{
+							"category": "power Inverters Stabilizers"
+						}
+					]
+				}
+			]
+		},
+		{
+			"categoryTitle": "Electronic Components",
+			"categoryImage": "src/assets/categoryImages/circuit.jpg",
+			"link": "automotive",
+			"subCategory": [
+				{
+					"subTitle": "Capacitors",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Electrolytic Capacitors"
+						},
+						{
+							"category": "Ceramic Capacitors"
+						},
+						{
+							"category": "Polyesteric Capacitors"
+						},
+						{
+							"category": "Variable Capacitors"
+						}
+					]
+				},
+				{
+					"subTitle": "Resistors",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "1 watt Resistors"
+						},
+						{
+							"category": "1/4 watt Resistors"
+						},
+						{
+							"category": "2 watt Resistors"
+						},
+						{
+							"category": "Potentiometers"
+						}
+					]
+				},
+				{
+					"subTitle": "Diodes",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Zener Diodes"
+						},
+						{
+							"category": "Light Emitting Diodes"
+						},
+						{
+							"category": "Diode Bridge Rectifiers"
+						},
+						{
+							"category": "Rectifying Diodes"
+						}
+					]
+				},
+				{
+					"subTitle": "IC's",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Timers"
+						},
+						{
+							"category": "Comparators"
+						},
+						{
+							"category": "Multiplexers"
+						},
+						{
+							"category": "Op Amps"
+						}
+					]
+				},
+				{
+					"subTitle": "Capacitors",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Electrolytic Capacitors"
+						},
+						{
+							"category": "Ceramic Capacitors"
+						},
+						{
+							"category": "Polyesteric Capacitors"
+						},
+						{
+							"category": "Variable Capacitors"
+						}
+					]
+				},
+				{
+					"subTitle": "Inductors",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Transformers"
+						},
+						{
+							"category": "Wires"
+						}
+					]
+				},
+				{
+					"subTitle": "Transistors",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "NPN"
+						},
+						{
+							"category": "PNP"
+						},
+						{
+							"category": "Mosfets"
+						},
+						{
+							"category": "Triac"
+						}
+					]
+				}
+			]
+		},
+		{
+			"categoryTitle": "Electronic Modules",
+			"categoryImage": "src/assets/categoryImages/module.jpeg",
+			"link": "motorcycle",
+			"subCategory": [
+				{
+					"subTitle": "Modules",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Power Bank modules"
+						},
+						{
+							"category": "Bulk Converters"
+						},
+						{
+							"category": "Boost Converters"
+						},
+						{
+							"category": "Charger Modules"
+						}
+					]
+				},
+				{
+					"subTitle": "Micro-Controllers",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Arduino Boards"
+						},
+						{
+							"category": "ESP Boards"
+						},
+						{
+							"category": "Atmega IC's"
+						},
+						{
+							"category": "PIC Controllers"
+						},
+						{
+							"category": "Raspberry Pi"
+						}
+					]
+				},
+				{
+					"subTitle": "Sensors",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Temperature Sensors"
+						},
+						{
+							"category": "Ultrasonic Sensors"
+						},
+						{
+							"category": "Finger Print Sensors"
+						},
+						{
+							"category": "Other Sensors"
+						}
+					]
+				},
+				{
+					"subTitle": "Boards",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Bread Boards"
+						},
+						{
+							"category": "PCB Boards"
+						},
+						{
+							"category": "Veroboard Boards"
+						},
+						{
+							"category": "Arduino Shields"
+						}
+					]
+				}
+			]
+		},
+		{
+			"categoryTitle": "Electronic Accessories",
+			"categoryImage": "src/assets/categoryImages/modern.jpg",
+			"link": "sunglasses",
+			"subCategory": [
+				{
+					"subTitle": "Batteries",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Battery Chargers"
+						},
+						{
+							"category": "Battery Holders"
+						},
+						{
+							"category": "Lithium Batteries"
+						},
+						{
+							"category": "Lead Acid Batteries"
+						},
+						{
+							"category": "Lipo Batteries"
+						}
+					]
+				},
+				{
+					"subTitle": "Regulators",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Voltage Regulators"
+						},
+						{
+							"category": "Volatge Sensors"
+						},
+						{
+							"category": "Switches & Relays"
+						}
+					]
+				},
+				{
+					"subTitle": "Reparing & Building Tools",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Soldering Irons"
+						},
+						{
+							"category": "Soldering Lead & Stands"
+						},
+						{
+							"category": "Screw Drivers"
+						}
+					]
+				},
+				{
+					"subTitle": "Motors",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Stepper Motors"
+						},
+						{
+							"category": "DC Motors & Fans"
+						},
+						{
+							"category": "Brushless Motors"
+						}
+					]
+				},
+				{
+					"subTitle": "Connectors",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "male to Female Connectors"
+						},
+						{
+							"category": "Female to Male Connectors"
+						},
+						{
+							"category": "Male & Female Headers"
+						},
+						{
+							"category": "Connecting Wires"
+						}
+					]
+				}
+			]
+		},
+		{
+			"categoryTitle": "Computing",
+			"categoryImage": "src/assets/categoryImages/laptop.jpeg",
+			"link": "laptops",
+			"subCategory": [
+				{
+					"subTitle": "Computers",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Desktops"
+						},
+						{
+							"category": "Laptops"
+						},
+						{
+							"category": "Monitors"
+						}
+					]
+				},
+				{
+					"subTitle": "Data Storage",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "External Hard Drives"
+						},
+						{
+							"category": "USB Flash Drives"
+						},
+						{
+							"category": "External Solid State "
+						},
+						{
+							"category": "Microwaves & Cleaners"
+						}
+					]
+				},
+				{
+					"subTitle": "Printers & Accessories",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Keyboards & Mouse"
+						},
+						{
+							"category": "UPS & Batteries"
+						},
+						{
+							"category": "Inkject & Laser Printers"
+						},
+						{
+							"category": "Printer Ink & Projectors"
+						}
+					]
+				},
+				{
+					"subTitle": "Top Brands",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "HP"
+						},
+						{
+							"category": "Lenovo"
+						},
+						{
+							"category": "Apple"
+						},
+						{
+							"category": "Samsung"
+						},
+						{
+							"category": "Dell"
+						},
+						{
+							"category": "Sandisk"
+						}
+					]
+				}
+			]
+		},
+		{
+			"categoryTitle": "Home Appliances",
+			"categoryImage": "src/assets/categoryImages/appliances.avif",
+			"link": "furniture",
+			"subCategory": [
+				{
+					"subTitle": "Heating & Cooling",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Standing Fans"
+						},
+						{
+							"category": "Electric Heaters & Washing Machines"
+						},
+						{
+							"category": "Fridges & Freezers"
+						},
+						{
+							"category": "Air Conditioners & Dispensers"
+						}
+					]
+				},
+				{
+					"subTitle": "Kitchen Appliances",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Induction Cookers"
+						},
+						{
+							"category": "Blenders & Deep Fryers"
+						},
+						{
+							"category": "Toasters & Ovens"
+						},
+						{
+							"category": "Microwaves & Cleaners"
+						}
+					]
+				},
+				{
+					"subTitle": "Televisions & Audio",
+					"subLink": "smartphones",
+					"categories": [
+						{
+							"category": "Televisions"
+						},
+						{
+							"category": "Dvd Players"
+						},
+						{
+							"category": "Smart & LED TV's"
+						},
+						{
+							"category": "Bluetooth Devices"
+						}
+					]
+				}
+			]
+		}
+	]
+}
