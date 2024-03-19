@@ -2,7 +2,7 @@
 import { Star } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import productImage1 from "@/assets/featuredimages/findlaptop.jpg";
-import productImage2 from "@/assets/categoryImages/laptop.jpeg";
+import productImage2 from "/categoryImages/laptop.jpeg";
 import { ICurrentProduct } from "./Product";
 import { CardPrice } from "@/components/ProductCard";
 

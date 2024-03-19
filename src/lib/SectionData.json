@@ -2,7 +2,7 @@
 	"CategoryData": [
 		{
 			"categoryTitle": "Phone & Telecommunications",
-			"categoryImage": "src/assets/categoryImages/phone.jpg",
+			"categoryImage": "/categoryImages/phone.jpg",
 			"link": "smartphones",
 			"subCategory": [
 				{
@@ -72,7 +72,7 @@
 		},
 		{
 			"categoryTitle": "Home Improvement & Lightening",
-			"categoryImage": "src/assets/categoryImages/lighting.jpg",
+			"categoryImage": "/categoryImages/lighting.jpg",
 			"link": "lighting",
 			"subCategory": [
 				{
@@ -127,7 +127,7 @@
 		},
 		{
 			"categoryTitle": "Electronic Components",
-			"categoryImage": "src/assets/categoryImages/circuit.jpg",
+			"categoryImage": "/categoryImages/circuit.jpg",
 			"link": "automotive",
 			"subCategory": [
 				{
@@ -254,7 +254,7 @@
 		},
 		{
 			"categoryTitle": "Electronic Modules",
-			"categoryImage": "src/assets/categoryImages/module.jpeg",
+			"categoryImage": "/categoryImages/module.jpeg",
 			"link": "motorcycle",
 			"subCategory": [
 				{
@@ -336,7 +336,7 @@
 		},
 		{
 			"categoryTitle": "Electronic Accessories",
-			"categoryImage": "src/assets/categoryImages/modern.jpg",
+			"categoryImage": "/categoryImages/modern.jpg",
 			"link": "sunglasses",
 			"subCategory": [
 				{
@@ -427,7 +427,7 @@
 		},
 		{
 			"categoryTitle": "Computing",
-			"categoryImage": "src/assets/categoryImages/laptop.jpeg",
+			"categoryImage": "/categoryImages/laptop.jpeg",
 			"link": "laptops",
 			"subCategory": [
 				{
@@ -509,7 +509,7 @@
 		},
 		{
 			"categoryTitle": "Home Appliances",
-			"categoryImage": "src/assets/categoryImages/appliances.avif",
+			"categoryImage": "/categoryImages/appliances.avif",
 			"link": "furniture",
 			"subCategory": [
 				{

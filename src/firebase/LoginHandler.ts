@@ -1,8 +1,8 @@
-import { LStore } from "@/screens/login/login";
+import { IUser } from "@/screens/login/login";
 import { auth } from "./firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
-export const LoginHandler = async ({ email, password }: LStore) => {
+export const LoginHandler = async ({ email, password }: IUser) => {
 	try {
 		const storeD = await signInWithEmailAndPassword(auth, email, password);
 		if (storeD?.user) {

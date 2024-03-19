@@ -1,5 +1,5 @@
 import { ICategorires } from "@/@types";
-import { CategoryData } from "../../SectionData.json";
+import { CategoryData } from "@/lib/SectionData.json";
 
 class ProductCategoryFetcher {
 	private CL: ICategorires[];

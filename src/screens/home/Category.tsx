@@ -44,7 +44,7 @@ function Categories() {
 										alt={category.title}
 									/>
 								</div>
-								<CardTitle className=" text-foreground text-[0.75rem] leading-4 sm:leading-7 sm:text-[1.2rem] text-wrap text-center  font-[RobotoRegular] flex justify-center mt-1 h-[2rem]">
+								<CardTitle className=" text-foreground text-[0.75rem] leading-4 sm:leading-7 sm:text-[1rem] text-wrap text-center  font-[RobotoLight] flex justify-center mt-1 h-[2rem]">
 									{category.title}
 								</CardTitle>
 							</Link>
