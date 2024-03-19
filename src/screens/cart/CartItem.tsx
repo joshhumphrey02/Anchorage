@@ -1,12 +1,12 @@
 import { CardPrice } from "@/components/ProductCard";
-import { Button } from "@/components/ui/button";
 import LocalDB from "@/localDB/Schema";
 import { checkItem, decreaseQty, increaseQty } from "@/reducers/Cart";
 import { useAppDispatch } from "@/redux/hook";
-import { Heart, Minus, Plus } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
 import { Link } from "react-router-dom";
-import { DeleteItem } from "./DeleteItem";
+import { DeleteItem } from "@/components/DeleteItem";
 import { type ICart } from "@/@types";
+import AddToFavorite from "@/components/AddToFavorite";
 
 interface CItem {
 	product: ICart;
@@ -16,11 +16,11 @@ function CartItem({ product }: CItem) {
 	const dispatch = useAppDispatch();
 	return (
 		<div
-			key={product.id}
+			key={product.title}
 			className=" grid grid-cols-[.9rem,3.1rem,auto,6rem] sm:grid-cols-[1.1rem,4.5rem,auto,8rem] font-[Robotobold] gap-2 py-3 border-b h-fit">
 			<div className="flex items-center">
 				<input
-					onClick={() => {
+					onChange={() => {
 						(async () => {
 							if (product.id === undefined) return;
 							const Ldb = new LocalDB();
@@ -60,10 +60,12 @@ function CartItem({ product }: CItem) {
 			</div>
 			<div className=" flex flex-col gap-3">
 				<div className="flex justify-end gap-8 sm:gap-3 mr-2">
-					<Button variant={"ghost"} className="p-0 sm:p-2 h-fit w-fit">
-						<Heart color="blue" />
-					</Button>
-					<DeleteItem id={product.id ? product.id : -1} />
+					{product && (
+						<>
+							<AddToFavorite product={product} />
+							<DeleteItem id={product.id ? product.id : -1} />
+						</>
+					)}
 				</div>
 				<div className="mt-0 sm:mt-2 flex items-center justify-end gap-3 pr-2">
 					<span

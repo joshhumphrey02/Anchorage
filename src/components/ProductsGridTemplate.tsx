@@ -28,7 +28,11 @@ function ProductsGridTemplate({ products, price }: HCard) {
 							alt="Shop personal laptops"
 						/>
 						<CardTitle>{item.title}</CardTitle>
-						<CardPrice hidden={price} className="mt-2" price={item.price} />
+						<CardPrice
+							hidden={price}
+							className="mt-2"
+							price={item.price * 1000}
+						/>
 					</Link>
 				</Card>
 			))}

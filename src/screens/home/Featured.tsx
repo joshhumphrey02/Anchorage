@@ -47,29 +47,29 @@ function Featured() {
 						<CardWrapper className="grid grid-cols-2 gap-2">
 							<CardImage
 								src={"https://source.unsplash.com/500x500?1k-resistors"}
-								className="md:h-[8rem] h-[9rem]"
+								className="h-[9rem]"
 								alt="Shop personal laptops"
 							/>
 							<CardImage
 								src={"https://source.unsplash.com/500x500?airpods"}
-								className="md:h-[8rem] h-[9rem]"
+								className="h-[9rem]"
 								alt="Shop personal laptops"
 							/>
 							<CardImage
 								src={"https://source.unsplash.com/500x500?arduino"}
-								className="h-[8rem] hidden lg:flex"
+								className="h-[9rem] hidden lg:flex"
 								alt="Shop personal laptops"
 							/>
 							<CardImage
 								src={"https://source.unsplash.com/500x500?phone charger"}
-								className="h-[8rem] hidden lg:flex"
+								className="h-[9rem] hidden lg:flex"
 								alt="Shop personal laptops"
 							/>
 						</CardWrapper>
 						<Link
 							state={"smartphones"}
 							className="mt-2 md:mt-5  text-xs font-[RobotoMedium] text-primary"
-							to={"/smartphones"}>
+							to={"/"}>
 							Shop personal laptops
 						</Link>
 					</Card>
@@ -90,7 +90,7 @@ function Featured() {
 							<Link
 								state={f.link}
 								className="md:mt-5 mt-2 text-xs font-[RobotoMedium] text-primary"
-								to={`/${f.link}`}>
+								to={`/`}>
 								{f.linkTitle}
 							</Link>
 						</Card>

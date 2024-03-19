@@ -1,13 +1,18 @@
 import { IProduct } from "@/@types";
-import { Card, CardImage, CardTitle } from "@/components/ProductCard";
+import {
+	Card,
+	CardImage,
+	CardPrice,
+	CardTitle,
+} from "@/components/ProductCard";
 import { isMobile } from "react-device-detect";
 import { Link } from "react-router-dom";
 
-interface IResult {
+interface IMayAlsoLikeCard {
 	result: IProduct[];
 }
 
-function MayAlsoLikeCard({ result }: IResult) {
+function MayAlsoLikeCard({ result }: IMayAlsoLikeCard) {
 	const scrollToTop = () => {
 		window.scrollTo({
 			top: 0,
@@ -24,11 +29,11 @@ function MayAlsoLikeCard({ result }: IResult) {
 					className={
 						isMobile
 							? "flex w-full text-nowrap overflow-x-auto gap-2"
-							: "grid grid-cols-4 gap-2 justify-between"
+							: "grid grid-cols-5 gap-2 justify-between"
 					}>
 					{result &&
 						result.map((item, i) => (
-							<Card key={i}>
+							<Card key={i} className="">
 								<Link
 									state={item.id}
 									onClick={scrollToTop}
@@ -45,6 +50,10 @@ function MayAlsoLikeCard({ result }: IResult) {
 									<CardTitle className="font-[RobotoRegular]">
 										{item.title}
 									</CardTitle>
+									<CardPrice
+										className="text-xs sm:text-base"
+										price={item.price * 1000}
+									/>
 								</Link>
 							</Card>
 						))}

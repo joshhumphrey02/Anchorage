@@ -23,37 +23,22 @@ function DesktopFooter() {
 							</li>
 							<li>
 								<Link className="text-sm font-[RobotoLight]" to="#">
-									How to shop on Art of Electronics?
+									How to shop on Anchorage?
 								</Link>
 							</li>
 							<li>
 								<Link className="text-sm font-[RobotoLight]" to="#">
-									Delivery options and timelines
+									Delivery options
 								</Link>
 							</li>
 							<li>
 								<Link className="text-sm font-[RobotoLight]" to="#">
-									How to return a product on Art of Electronics?
-								</Link>
-							</li>
-							<li>
-								<Link className="text-sm font-[RobotoLight]" to="#">
-									Corporate and bulk purchases
+									How to return a product on Anchorage?
 								</Link>
 							</li>
 							<li>
 								<Link className="text-sm font-[RobotoLight]" to="#">
 									Report a Product
-								</Link>
-							</li>
-							<li>
-								<Link className="text-sm font-[RobotoLight]" to="#">
-									Ship your package anywhere in Nigeria
-								</Link>
-							</li>
-							<li>
-								<Link className="text-sm font-[RobotoLight]" to="#">
-									Dispute Resolution Policy
 								</Link>
 							</li>
 						</ul>
@@ -68,16 +53,6 @@ function DesktopFooter() {
 							</li>
 							<li>
 								<Link className="text-sm font-[RobotoLight]" to="#">
-									Art of Electronics careers
-								</Link>
-							</li>
-							<li>
-								<Link className="text-sm font-[RobotoLight]" to="#">
-									Art of Electronics Express
-								</Link>
-							</li>
-							<li>
-								<Link className="text-sm font-[RobotoLight]" to="#">
 									Terms and Conditions
 								</Link>
 							</li>
@@ -88,12 +63,7 @@ function DesktopFooter() {
 							</li>
 							<li>
 								<Link className="text-sm font-[RobotoLight]" to="#">
-									Art of Electronics Prime
-								</Link>
-							</li>
-							<li>
-								<Link className="text-sm font-[RobotoLight]" to="#">
-									Art of Electronics Global
+									Anchorage Global
 								</Link>
 							</li>
 							<li>
@@ -103,7 +73,7 @@ function DesktopFooter() {
 							</li>
 							<li>
 								<Link className="text-sm font-[RobotoLight]" to="#">
-									Electronic Festival 2022
+									Electronic Festival 2024
 								</Link>
 							</li>
 						</ul>
@@ -115,7 +85,7 @@ function DesktopFooter() {
 						<ul className="py-1">
 							<li>
 								<Link className="text-sm font-[RobotoLight]" to="#">
-									Sell on Art of Electronics
+									Sell on Anchorage
 								</Link>
 							</li>
 							<li>
@@ -135,12 +105,7 @@ function DesktopFooter() {
 							</li>
 							<li>
 								<Link className="text-sm font-[RobotoLight]" to="#">
-									Join the Art of Electronics Academy
-								</Link>
-							</li>
-							<li>
-								<Link className="text-sm font-[RobotoLight]" to="#">
-									Join the Art of Electronics Coding Program
+									Join the Anchorage Coding Program
 								</Link>
 							</li>
 						</ul>

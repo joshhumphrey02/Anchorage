@@ -5,7 +5,7 @@ import { checkAllItem } from "@/reducers/Cart";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
 import { isMobile } from "react-device-detect";
 import CartItem from "./CartItem";
-import CartSummary from "./CarrtSummary";
+import CartSummary from "./CartSummary";
 
 function Cart() {
 	const dispatch = useAppDispatch();
@@ -30,7 +30,7 @@ function Cart() {
 					<div className="flex flex-col bg-card my-3 rounded-lg p-4">
 						<h3 className=" flex gap-2 border-b pb-4 items-center">
 							<input
-								onClick={() => dispatch(checkAllItem())}
+								onChange={() => dispatch(checkAllItem())}
 								type="checkbox"
 								name=""
 								checked={

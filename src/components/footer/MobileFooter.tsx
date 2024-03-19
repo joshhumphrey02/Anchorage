@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function MobileFooter() {
 	return (
-		<footer className="container sm:mb-10">
+		<footer className="container sm:mb-10 mt-5">
 			<div className="bg-card rounded-lg p-3">
 				<div className="mb-3 border-b pb-2">
 					<ul className="flex justify-evenly gap-3 flex-wrap">

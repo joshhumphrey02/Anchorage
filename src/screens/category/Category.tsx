@@ -2,23 +2,23 @@ import { useFetchByCategoryQuery } from "@/api/ProductApi";
 import CatNav from "@/components/navbar/CatNav";
 import ProductsGridTemplate from "@/components/ProductsGridTemplate";
 import AuthWrapper from "@/lib/AuthWrapper";
-import ProductCategoryFetcher from "@/lib/ProductCategoryFetcher";
-import { NavLink, useLocation } from "react-router-dom";
+// import ProductCategoryFetcher from "@/lib/ProductCategoryFetcher";
+import { useLocation } from "react-router-dom";
 
 function Category() {
-	const main = new ProductCategoryFetcher();
+	// const main = new ProductCategoryFetcher();
 	const { state } = useLocation();
 	const { data, isFetching } = useFetchByCategoryQuery({
 		category: state.link,
 		limit: 20,
 		skip: 0,
 	});
-	const subs = main.subCategory(state.name);
+	// const subs = main.subCategory(state.name);
 	return (
 		<AuthWrapper>
 			<CatNav data={data} />
-			<section className="container grid grid-cols-1 lg:grid-cols-[17%,auto] gap-3">
-				<div className="w-full h-full hidden lg:flex bg-card">
+			<section className="container flex gap-3">
+				{/* <div className="w-full h-full hidden lg:flex bg-card">
 					<ul className="flex flex-col py-2 w-full">
 						{subs !== undefined &&
 							subs.map((sub, i) => (
@@ -33,7 +33,7 @@ function Category() {
 								</li>
 							))}
 					</ul>
-				</div>
+				</div> */}
 				<div>
 					{isFetching ? (
 						<div>Loading...</div>

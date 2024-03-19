@@ -18,10 +18,13 @@ function CartSummary() {
 				</h2>
 				<div className="flex justify-between gap-4 mt-5 mb-3 pb-3 border-b ">
 					<h4 className="font-[RobotoRegular]">SubTotal:</h4>
-					<CardPrice className="text-xl font-[RobotoBold]" price={totalPrice} />
+					<CardPrice
+						className="text-xl font-[RobotoBold]"
+						price={totalPrice * 1000}
+					/>
 				</div>
 				<Button className="w-full">
-					CHECKOUT (<CardPrice price={totalPrice} />)
+					CHECKOUT (<CardPrice price={totalPrice * 1000} />)
 				</Button>
 			</div>
 		</div>

@@ -176,6 +176,25 @@ textarea {
 	background-color: rgba(0, 0, 255, 0.401) !important;
 }
 
+.loader {
+	animation: fade 2s infinite;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0.5;
+		scale: 0.6;
+	}
+	50% {
+		opacity: 1;
+		scale: 1;
+	}
+	100% {
+		opacity: 0.5;
+		scale: 0.6;
+	}
+}
+
 @media screen and (max-width: 765px) {
 	.sub_main {
 		grid-template-columns: auto;

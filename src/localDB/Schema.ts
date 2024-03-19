@@ -3,12 +3,35 @@ import { IDBPDatabase, openDB } from "idb";
 class LocalDB {
 	private db: any;
 
-	constructor() {}
+	constructor() {
+		(async () => {
+			try {
+				this.db = await openDB("Anchorage", 1, {
+					upgrade(db: IDBPDatabase) {
+						const tableNames = ["cart", "fav", "user"];
+						for (const tableName of tableNames) {
+							if (db.objectStoreNames.contains(tableName)) {
+								continue;
+							}
+							db.createObjectStore(tableName, {
+								keyPath: "id",
+								autoIncrement: false,
+							});
+						}
+					},
+				});
+			} catch (error) {
+				console.log(error);
+				return false;
+			}
+		})();
+	}
 
 	public async createObjectStore(tableNames: string[]) {
 		try {
 			this.db = await openDB("Anchorage", 1, {
 				upgrade(db: IDBPDatabase) {
+					console.log("hi");
 					for (const tableName of tableNames) {
 						if (db.objectStoreNames.contains(tableName)) {
 							continue;
@@ -18,9 +41,12 @@ class LocalDB {
 							autoIncrement: false,
 						});
 					}
+					console.log(db.objectStoreNames);
 				},
 			});
+			return this.db.objectStore;
 		} catch (error) {
+			console.log(error);
 			return false;
 		}
 	}
@@ -58,7 +84,7 @@ class LocalDB {
 	public async putValue(tableName: string, value: object) {
 		const tx = this.db.transaction(tableName, "readwrite");
 		const store = tx.objectStore(tableName);
-		const result = await store.put(value);
+		const result = await store.add(value);
 		return result;
 	}
 

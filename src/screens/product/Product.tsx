@@ -14,6 +14,7 @@ import AuthWrapper from "@/lib/AuthWrapper";
 import { isMobile } from "react-device-detect";
 import InvalidData from "@/components/InvalidData";
 import noProduct from "@/assets/vectors/no-product.jpg";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export interface ICurrentProduct {
 	data: Partial<IProduct>;
@@ -21,7 +22,7 @@ export interface ICurrentProduct {
 
 function Product() {
 	const { state } = useLocation();
-	const { data } = useFetchSingleProductsQuery(state);
+	const { data, isLoading } = useFetchSingleProductsQuery(state);
 	const result = useFetchByCategoryQuery({
 		category: data ? data?.category : "",
 		limit: isMobile ? 8 : 4,
@@ -29,10 +30,17 @@ function Product() {
 	return (
 		<AuthWrapper>
 			<main className="container">
-				<div className="mt-4 grid grid-cols-1 2xl:grid-cols-[auto,22.4rem] lg:grid-cols-[auto,22.4rem] gap-3 relative">
+				<div
+					className={`${
+						data
+							? "grid-cols-1 2xl:grid-cols-[auto,22.4rem] lg:grid-cols-[auto,22.4rem]"
+							: "grid-cols-1"
+					} mt-4 grid  gap-3 relative`}>
 					<div>
 						<div>
-							{data ? (
+							{isLoading ? (
+								<Skeleton className="w-full h-[20rem]">Loading</Skeleton>
+							) : data ? (
 								<>
 									<div className="bg-card grid grid-cols-1 2xl:grid-cols-[30rem,auto] lg:grid-cols-[22rem,auto] gap-3  px-3 py-5 rounded-lg">
 										<ProductImage data={data} />
@@ -49,11 +57,11 @@ function Product() {
 								/>
 							)}
 						</div>
-						{result && <MayAlsoLikeCard result={result} />}
 					</div>
 					{data && <ProductSideNav data={data} />}
 				</div>
 			</main>
+			{result && <MayAlsoLikeCard result={result} />}
 		</AuthWrapper>
 	);
 }

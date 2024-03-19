@@ -51,7 +51,7 @@ function CarouselImages() {
 				className="w-full h-fit border mx-auto p-2 rounded-lg flex items-center"
 				onMouseEnter={plugin.current.stop}
 				onMouseLeave={plugin.current.reset}>
-				<CarouselContent>
+				<CarouselContent className="relative">
 					{Images.map((image, i) => (
 						<CarouselItem key={i} className="w-full relative">
 							<div className="flex w-full h-fit items-center justify-center">

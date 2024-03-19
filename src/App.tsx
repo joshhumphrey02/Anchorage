@@ -12,6 +12,14 @@ import Cart from "./screens/cart/Cart";
 import Login from "./screens/login/login";
 import Register from "./screens/registeration/Register";
 import Account from "./screens/account/Account";
+import Details from "./screens/account/Details";
+import CustomerOrders from "./screens/account/CustomerOrders";
+import SavedItems from "./screens/account/SavedItems";
+import Reviews from "./screens/account/Reviews";
+import RecentlyViewed from "./screens/account/RecentlyViewed";
+import InviteFriends from "./screens/account/InviteFriends";
+import Settings from "./screens/account/Settings";
+import Others from "./screens/account/Others";
 
 const router = createBrowserRouter([
 	{
@@ -25,9 +33,36 @@ const router = createBrowserRouter([
 		element: <Account />,
 		children: [
 			{
-				path: ":ACategory",
-				errorElement: <ErrorPage />,
-				element: <Account />,
+				path: "/account",
+				element: <Details />,
+			},
+			{
+				path: "orders",
+				element: <CustomerOrders />,
+			},
+			{
+				path: "saved-items",
+				element: <SavedItems />,
+			},
+			{
+				path: "reviews",
+				element: <Reviews />,
+			},
+			{
+				path: "recent-view",
+				element: <RecentlyViewed />,
+			},
+			{
+				path: "invite-friends",
+				element: <InviteFriends />,
+			},
+			{
+				path: "setting",
+				element: <Settings />,
+			},
+			{
+				path: "/account/:category",
+				element: <Others />,
 			},
 		],
 	},
@@ -64,21 +99,21 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-	if ("serviceWorker" in navigator) {
-		window.addEventListener("load", () => {
-			navigator.serviceWorker
-				.register("/ServiceWorker.js")
-				.then((registration) => {
-					console.log(
-						"ServiceWorker registration successful with scope: ",
-						registration.scope
-					);
-				})
-				.catch((error) => {
-					console.log("ServiceWorker registration failed: ", error);
-				});
-		});
-	}
+	// if ("serviceWorker" in navigator) {
+	// 	window.addEventListener("load", () => {
+	// 		navigator.serviceWorker
+	// 			.register("/ServiceWorker.js")
+	// 			.then((registration) => {
+	// 				console.log(
+	// 					"ServiceWorker registration successful with scope: ",
+	// 					registration.scope
+	// 				);
+	// 			})
+	// 			.catch((error) => {
+	// 				console.log("ServiceWorker registration failed: ", error);
+	// 			});
+	// 	});
+	// }
 	return (
 		<ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
 			<Provider store={store}>

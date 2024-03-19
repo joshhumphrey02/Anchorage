@@ -121,28 +121,28 @@ function Navbar() {
 										<DropdownMenuGroup>
 											<DropdownMenuItem>
 												<Link
-													className="font-[RobotoRegular] text-sm "
+													className="font-[RobotoRegular] text-sm w-full "
 													to={"/account"}>
 													Orders
 												</Link>
 											</DropdownMenuItem>
 											<DropdownMenuItem>
 												<Link
-													className="font-[RobotoRegular] text-sm "
+													className="font-[RobotoRegular] text-sm w-full "
 													to={"/"}>
 													Message Center
 												</Link>
 											</DropdownMenuItem>
 											<DropdownMenuItem>
 												<Link
-													className="font-[RobotoRegular] text-sm "
+													className="font-[RobotoRegular] text-sm w-full "
 													to={"/"}>
 													Payment
 												</Link>
 											</DropdownMenuItem>
 											<DropdownMenuItem>
 												<Link
-													className="font-[RobotoRegular] text-sm "
+													className="font-[RobotoRegular] text-sm w-full "
 													to={"/"}>
 													Wish List
 												</Link>
@@ -152,21 +152,21 @@ function Navbar() {
 										<DropdownMenuGroup>
 											<DropdownMenuItem>
 												<Link
-													className="font-[RobotoRegular] text-sm "
+													className="font-[RobotoRegular] text-sm w-full "
 													to={"/"}>
 													Seller Login
 												</Link>
 											</DropdownMenuItem>
 											<DropdownMenuItem>
 												<Link
-													className="font-[RobotoRegular] text-sm "
+													className="font-[RobotoRegular] text-sm w-full "
 													to={"/"}>
 													Help Center
 												</Link>
 											</DropdownMenuItem>
 											<DropdownMenuItem>
 												<Link
-													className="font-[RobotoRegular] text-sm "
+													className="font-[RobotoRegular] text-sm w-full "
 													to={"/"}>
 													Disputes & Reports
 												</Link>
@@ -174,15 +174,17 @@ function Navbar() {
 										</DropdownMenuGroup>
 										<DropdownMenuSeparator />
 										<DropdownMenuItem className="p-0 pt-2">
-											<Button
-												onClick={() => {
-													signOut(auth);
-													window.location.reload();
-												}}
-												variant={"destructive"}
-												className="w-full">
-												Log out
-											</Button>
+											{currentUser.id && (
+												<Button
+													onClick={() => {
+														signOut(auth);
+														window.location.reload();
+													}}
+													variant={"destructive"}
+													className="w-full">
+													Log out
+												</Button>
+											)}
 										</DropdownMenuItem>
 									</DropdownMenuContent>
 								</DropdownMenu>

@@ -10,10 +10,9 @@ import { CardPrice } from "@/components/ProductCard";
 import { isMobile } from "react-device-detect";
 
 function ProductSideNav({ data = {} }: ICurrentProduct) {
+	const productSidebar = useRef<HTMLDivElement>(null);
 	const parentRef = useRef<HTMLDivElement>(null);
-	const [isScrolled, setIsScrolled] = useState(false);
 	const [quantity, setQuantity] = useState(1);
-	const [h, setH] = useState(0);
 	const dispatch = useAppDispatch();
 
 	async function AddToCart() {
@@ -47,17 +46,21 @@ function ProductSideNav({ data = {} }: ICurrentProduct) {
 	}
 
 	useEffect(() => {
-		const handleScroll = () => {
-			setH(window.scrollY);
-			if (window.scrollY > 100) {
-				setIsScrolled(true);
-			} else {
-				setIsScrolled(false);
-			}
-		};
-		window.addEventListener("scroll", handleScroll);
+		function animateDiv() {
+			if (
+				parentRef.current?.clientHeight === undefined ||
+				productSidebar.current === null
+			)
+				return;
+			window.scrollY < parentRef.current?.clientHeight - 540
+				? (productSidebar.current.style.marginTop = window.scrollY + "px")
+				: (productSidebar.current.style.marginTop =
+						parentRef.current?.clientHeight - 540 + "px");
+		}
+
+		window.addEventListener("scroll", () => requestAnimationFrame(animateDiv));
 		return () => {
-			window.removeEventListener("scroll", handleScroll);
+			window.removeEventListener("scroll", animateDiv);
 		};
 	}, []);
 	return (
@@ -79,27 +82,8 @@ function ProductSideNav({ data = {} }: ICurrentProduct) {
 					</div>
 				</div>
 			) : (
-				<div ref={parentRef} className=" w-full h-vh relative hidden lg:flex">
-					<div
-						style={{
-							top:
-								isScrolled &&
-								parentRef.current &&
-								h < parentRef.current?.clientHeight - 530
-									? h
-									: "",
-							bottom:
-								isScrolled &&
-								parentRef.current &&
-								h < parentRef.current?.clientHeight - 530
-									? ""
-									: "0px",
-						}}
-						className={`${
-							isScrolled
-								? " absolute scroll-smooth 2xl:right-[13%] right-0"
-								: "relative"
-						} w-[22.4rem]`}>
+				<div ref={parentRef} className=" w-full relative hidden lg:flex">
+					<div ref={productSidebar} className={` w-[22.4rem]`}>
 						<div className=" w-full bg-card py-4 px-3 rounded-lg">
 							<div className="flex gap-2 pb-3 border-b mb-3">
 								<div className="flex gap-1 items-center">
